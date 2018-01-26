@@ -1,0 +1,47 @@
+{
+  "name": "can-define-list",
+  "version": "0.0.0",
+  "description": "Create observable lists.",
+  "main": "can-define-list.js",
+  "scripts": {
+    "jshint": "jshint --config .jshintrc --exclude ./node_modules,./dist .",
+    "preversion": "npm test",
+    "postpublish": "git push --tags && git push",
+    "release:pre": "npm version prerelease && npm publish --tag pre",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "testee": "testee test.html --browsers firefox",
+    "test": "npm run detect-cycle && npm run jshint && npm run testee",
+    "detect-cycle": "detect-cyclic-packages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canjs/can-define-list"
+  },
+  "keywords": [
+    "CanJS"
+  ],
+  "author": {
+    "name": "Bitovi",
+    "email": "contact@bitovi.com",
+    "web": "http://bitovi.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canjs/can-define-list/issues"
+  },
+  "homepage": "https://canjs.com/doc/can-define-list.html",
+  "dependencies": {
+    "can-define": "^2.0.0-pre.34"
+  },
+  "devDependencies": {
+    "can-symbol": "^1.0.0-pre.4",
+    "detect-cyclic-packages": "^1.1.0",
+    "jshint": "^2.9.1",
+    "steal": "^1.0.7",
+    "steal-qunit": "^1.0.0",
+    "steal-tools": "^1.4.0",
+    "testee": "^0.7.0"
+  }
+}
