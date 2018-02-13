@@ -8,35 +8,7 @@
 Extends DefineList, or constructor functions derived from DefineList,
 to create a new constructor function.
 
-```js
-var DefineList = require("can-define-list");
-
-var TodoList = DefineList.extend(
-  "TodoList",
-  {
-    "#": {type: {complete: "boolean", name: "string"}},
-    availableCount: "number",
-    completedCount: {
-      get: function(){
-        return this.filter({complete: true}).length;
-      }
-    },
-    completeAll: function(){
-      this.forEach(function(todo){
-        todo.complete = true;
-      })
-    }
-  });
-
-var todos = new TodoList([
-  {name: "dishes", complete: false},
-  {name: "lawn", complete: false}
-]);
-todos.availableCount = 100;
-
-todos.completeAll();
-todos.completeCount //-> 2
-```
+undefined
 
   @param {String} [name] Provides an optional name for this type that will
   show up nicely in debuggers.
