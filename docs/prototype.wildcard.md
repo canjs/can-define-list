@@ -11,7 +11,7 @@ default behavior for every property in the list.  The default wildcard `"*"` def
 makes every property run through the "observable" [can-define.types] converter.
 It looks like:
 
-```js
+```javascript
 {
   "*": {
     type: "observable"
@@ -21,15 +21,15 @@ It looks like:
 
 Setting the wildcard is useful when all properties should be converted to a particular type.
 
-```js
-var Person = DefineList.extend({ ... });
+```javascript
+const Person = DefineList.extend({ /* ... */ });
 
-var People = DefineList.extend({
+const People = DefineList.extend({
   "*": "string",
   "#": Person
 });
 
-var people = new People();
+const people = new People();
 
 people.set("age", 21);
 people.age //-> "21"
