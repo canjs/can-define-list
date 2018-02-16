@@ -1,6 +1,6 @@
 {
   "name": "can-define-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create observable lists.",
   "main": "can-define-list.js",
   "scripts": {
