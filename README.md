@@ -5,15 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/canjs/can-define-list/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/can-define-list.svg)](https://www.npmjs.com/package/can-define-list)
 [![Travis build status](https://travis-ci.org/canjs/can-define-list.svg?branch=master)](https://travis-ci.org/canjs/can-define-list)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-define-list?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-define-list)
-[![Coverage status](https://coveralls.io/repos/github/canjs/can-define-list/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-define-list?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-define-list.svg)](https://greenkeeper.io/)
 
 Add observable properties, type conversion, and getter/setter logic to your constructor prototypes.
-
-## Documentation
-
-Read the [can-define-list API docs on CanJS.com](https://canjs.com/doc/can-define-list.html).
 
 ## Changelog
 
