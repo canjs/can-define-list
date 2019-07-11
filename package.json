@@ -33,7 +33,7 @@
   },
   "homepage": "https://canjs.com/doc/can-define-list.html",
   "dependencies": {
-    "can-define": "^2.0.0-pre.34"
+    "can-define": "^2.7.19"
   },
   "devDependencies": {
     "can-symbol": "^1.0.0-pre.4",
